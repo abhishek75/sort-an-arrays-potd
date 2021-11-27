@@ -1,0 +1,19 @@
+void sort012(int a[], int n)
+{
+     int newa[n],count = 0;
+        for (int i = 0; i < 3; i++)
+        {
+            for (int j = 0; j < n; j++)
+            {
+                if (a[j] == i)
+                {
+                   newa[count] = a[j];
+                   count++;
+                }
+            }
+        }
+        for (int i = 0; i < n; i++)
+        {
+           a[i] = newa[i];
+        }
+}
